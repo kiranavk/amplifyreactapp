@@ -66,3 +66,18 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### scripts used in ec2 instance
+
+sudo yum update -y
+sudo yum install git -y
+git clone <project>
+
+sudo yum install nodejs npm
+
+curl -sL https://rpm.nodesource.com/setup_10.x | sudo -E bash -
+sudo yum install -y nodejs
+
+npm run build
+sudo npm install -g serve
+serve -s build
